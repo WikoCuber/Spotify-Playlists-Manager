@@ -17,8 +17,15 @@ The first time you start the app, the Spotify login page will be display. Next t
 
 # Files Descriptions
 | File | Description |
-|---|---|---|---|---|
+| --- | --- |
 | IDs.cfg | As you read earlier, it contains Spotify IDs |
 | %appdata%/SPM/Cache/ | Cache files |
 | %appdata%/SPM/playlists.txt | This file contains all tracks that was and is in playlists |
+
+| Item              | In Stock | Price |
+| :---------------- | :------: | ----: |
+| Python Hat        |   True   | 23.99 |
+| SQL Hat           |   True   | 23.99 |
+| Codecademy Tee    |  False   | 19.99 |
+| Codecademy Hoodie |  False   | 42.99 |
 
