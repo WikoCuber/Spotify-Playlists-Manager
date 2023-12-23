@@ -16,7 +16,7 @@ Now you can having fun.
 The first time you start the app, the Spotify login page will be display. Next time you will be login automatically. Every time you will open app, it will update your playlist history, so before you decide to delete some tracks, first you should run app.
 
 # Files Descriptions
-File | Description |
+| File | Description |
 | IDs.cfg | As you read earlier, it contains Spotify IDs |
 | %appdata%/SPM/Cache/ | Cache files |
 | %appdata%/SPM/playlists.txt | This file contains all tracks that was and is in playlists |
