@@ -13,9 +13,24 @@ namespace SPM_API
 {
     public static class Connector
     {
-        private const string CLIENT_ID = "8a834b4a0baa4006915fce8cbf14b852";
-        private const string CLIENT_SECRET_ID = "aec3a9c1c7fe4b7f87bb8eb7dbe933c2";
+        private static readonly string CLIENT_ID;
+        private static readonly string CLIENT_SECRET_ID;
         private const string PERMISSIONS = "playlist-modify-private user-library-read user-read-private playlist-read-private playlist-read-collaborative";
+
+        static Connector()
+        {
+            if (!File.Exists("IDs.cfg"))
+                File.Create("IDs.cfg").Close();
+
+            //Load IDs from config file
+            string[] ids = File.ReadAllLines("IDs.cfg");
+
+            if (ids.Length < 2)
+                throw new Exception("Bad config file");
+
+            CLIENT_ID = ids[0];
+            CLIENT_SECRET_ID = ids[1];
+        }
 
         public static UserData Connect(HttpClient client)
         {
