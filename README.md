@@ -17,6 +17,7 @@ The first time you start the app, the Spotify login page will be display. Next t
 
 # Files Descriptions
 | File | Description |
+|---|---|---|---|---|
 | IDs.cfg | As you read earlier, it contains Spotify IDs |
 | %appdata%/SPM/Cache/ | Cache files |
 | %appdata%/SPM/playlists.txt | This file contains all tracks that was and is in playlists |
