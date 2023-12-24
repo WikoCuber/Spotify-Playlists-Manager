@@ -10,7 +10,7 @@ namespace SPM_UI.Forms
 {
     public partial class CompleteForm : Form
     {
-        private readonly List<SPM_API.Data.PlaylistData> _playlists;
+        private readonly List<PlaylistData> _playlists;
         private readonly List<TrackData> _tracks;
         private readonly HttpClient _client;
 
@@ -25,7 +25,7 @@ namespace SPM_UI.Forms
         private int currentIndex = -1;
         private bool isPlaying = false;
 
-        public CompleteForm(SpotifyApi api, List<SPM_API.Data.PlaylistData> playlists)
+        public CompleteForm(SpotifyApi api, List<PlaylistData> playlists)
         {
             InitializeComponent();
 
@@ -163,7 +163,7 @@ namespace SPM_UI.Forms
         {
             TrackData track = _tracks[currentIndex];
             string name = playlistComboBox.SelectedItem!.ToString()!;
-            SPM_API.Data.PlaylistData playlist = _playlists.First(x => x.Name == name);
+            PlaylistData playlist = _playlists.First(x => x.Name == name);
 
             playlist.Tracks.Add(track);
             PlaylistsFile.SaveTrack(playlist.Id, track.Id, track.AddedAt, track.Name);
