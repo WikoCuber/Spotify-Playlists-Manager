@@ -1,5 +1,12 @@
 # Introduction
-Spotify Playlists Manager allows to see history of tracks in your Spotify playlists. It has features like:
+Spotify Playlists Manager allows to see history of tracks in your Spotify playlists.
+
+# Technologies used
+ - .NET 8
+ - Windows Froms
+ - [Spotify Web API](https://developer.spotify.com/documentation/web-api)
+
+# Features
  - Easly creating new playlist with all songs that was in it
  - Complete playlist history using favorite tracks
  - Looking through tracks with a simple list
