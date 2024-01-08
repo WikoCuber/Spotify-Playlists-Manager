@@ -21,6 +21,9 @@ Your Client Secret ID
 # Usage
 The first time you start the app, the Spotify login page will be display. Next time you will be login automatically. Every time you will open app, it will update your playlist history, so before you decide to delete some tracks, first you should run app.
 
+# License
+Distributed under the MIT License. See LICENSE.txt for more information.
+
 # Files Descriptions
 | File | Description |
 | --- | --- |
