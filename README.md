@@ -12,7 +12,7 @@ Spotify Playlists Manager allows to see history of tracks in your Spotify playli
  - Looking through tracks with a simple list
 
 # Getting Started
-If you want to use this app, you have to do some things. First, you need to create an account in the [Spotify for Developers](https://developer.spotify.com/) site. After this, in your dashboard you need to click "Create app" button. Then complete the form. Then in settings page copy your Client ID. Paste this into IDs.cfg file that is in the same directory as your exe file. In new line do the same thing with Client Secret ID. It`s supposed to look like this:
+To use this app you need .NET 8 Desktop Runtime. You can download this from here or open an app (if you don't have installed runtime you will get a message with link to download). Second, you need to create an account in the [Spotify for Developers](https://developer.spotify.com/) site. After this, in your dashboard you need to click "Create app" button. Then complete the form. Then in settings page copy your Client ID. Paste this into IDs.cfg file that is in the same directory as your exe file. In new line do the same thing with Client Secret ID. It`s supposed to look like this:
 ```cfg
 Your Client ID
 Your Client Secret ID
