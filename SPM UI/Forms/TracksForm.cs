@@ -31,7 +31,7 @@ namespace SPM_UI.Forms
             mainPanel.Height = (int)(Screen.FromControl(this).Bounds.Height * 0.7); //Use 70% of screen height
             Text += playlist.Name; //Correct form name
 
-            _playlist.Tracks = _playlist.Tracks.OrderBy(x => x.AddedAt).ToList(); //Order by date
+            _playlist.Tracks = [.. _playlist.Tracks.OrderBy(x => x.AddedAt)]; //Order by date
 
             //Invoke to update status of buttons and label
             nextButton_Click(this, new EventArgs());
@@ -193,7 +193,7 @@ namespace SPM_UI.Forms
         private void previousButton_Click(object sender, EventArgs e)
         {
             //Wait to complete load images
-            Task.WaitAll(imageTasks.ToArray());
+            Task.WaitAll([.. imageTasks]);
 
             GenerateTable(--currentPage);
 
@@ -205,7 +205,7 @@ namespace SPM_UI.Forms
         private void nextButton_Click(object sender, EventArgs e)
         {
             //Wait to complete load images
-            Task.WaitAll(imageTasks.ToArray());
+            Task.WaitAll([.. imageTasks]);
 
             GenerateTable(++currentPage);
 
@@ -230,7 +230,7 @@ namespace SPM_UI.Forms
         //Stop player and render after close form
         private void TracksForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Task.WaitAll(imageTasks.ToArray());
+            Task.WaitAll([.. imageTasks]);
             tokenSource?.Cancel();
         }
     }
