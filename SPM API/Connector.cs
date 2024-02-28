@@ -15,7 +15,7 @@ namespace SPM_API
     {
         private static readonly string CLIENT_ID;
         private static readonly string CLIENT_SECRET_ID;
-        private const string PERMISSIONS = "playlist-modify-private user-library-read user-read-private playlist-read-private playlist-read-collaborative";
+        private const string PERMISSIONS = "playlist-modify-public playlist-modify-private user-library-read user-read-private playlist-read-private playlist-read-collaborative";
 
         static Connector()
         {
