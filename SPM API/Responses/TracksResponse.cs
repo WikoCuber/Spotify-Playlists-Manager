@@ -18,7 +18,7 @@
             public string id { get; set; } = default!;
             public Album album { get; set; } = default!;
             public Artist[] artists { get; set; } = default!;
-            public int duration_ms { get; set; }
+            public float duration_ms { get; set; }
             public string name { get; set; } = default!;
             public string? preview_url { get; set; }
         }
@@ -31,8 +31,8 @@
         public class Image
         {
             public string url { get; set; } = default!;
-            public int height { get; set; }
-            public int width { get; set; }
+            public float height { get; set; }
+            public float width { get; set; }
         }
 
         public class Artist

@@ -17,8 +17,8 @@ namespace SPM_API.Helpers
 
             var image = trackResponse.album.images.MinBy(x => x.width); //Smallest
             track.ImageUrl = image!.url;
-            track.ImageWidth = image.width;
-            track.ImageHeight = image.height;
+            track.ImageWidth = (int)image.width;
+            track.ImageHeight = (int)image.height;
 
             foreach (var artist in trackResponse.artists)
                 track.Artists.Add(artist.name);
